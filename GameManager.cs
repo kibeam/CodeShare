@@ -46,7 +46,7 @@ namespace SPODY_3_6_4_UP
         IEnumerator GameSequence()
         {
 
-            Function.TouchEnable(false); //터치 비활성화
+            Function.TouchEnable(false);
             yield return new WaitUntil(() => !countObject.IsPlay);
             IngameEnum = IngameEnum.Ingame;
             UpDownTimer.instance.isTimerOn = true;
